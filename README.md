@@ -3,7 +3,7 @@ Repository per l'esercitazione del Team 1 della classe Fullstack 6
 
 ## Team 1 – Progetto sito Netflix
 
-** LEGGERE LE PROPRIE TASK E LA CONVENZIONE A FINE PAGINA. **
+**LEGGERE LE PROPRIE TASK E LA CONVENZIONE A FINE PAGINA.**
 
 ### Membri del Team 1:
     - Team Leader:

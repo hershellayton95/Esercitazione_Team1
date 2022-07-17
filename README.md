@@ -1,3 +1,5 @@
+> **Questa repository è a scopo educativo. Ogni diritto sui media è di NETFLIX ITALIA**
+
 # Esercitazione_Team1
 Repository per l'esercitazione del Team 1 della classe Fullstack 6
 

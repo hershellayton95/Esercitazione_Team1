@@ -1,0 +1,75 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dario {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black);
+  color: #fff;
+  border-bottom: 8px solid var(--gray);
+  
+}
+
+.div-dario-img {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.article-dario {
+  /* border: 2px solid fuchsia; */
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+
+.article-dario img {
+  max-width: 100%;
+  height: auto;
+  /* border: 2px solid green; */
+
+}
+
+.div-dario-text {
+  
+  max-width: 50%;
+  /* border: 2px solid red; */
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.div-dario-text h2 {
+  font-size: 3rem ;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:950px) {
+  .article-dario {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .div-dario-text {
+    max-width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .article-dario img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .div-dario-text h2{
+    font-size: 1rem;
+  }
+
+  .div-dario-text p {
+    font-size: 0.8rem;
+  }
+}

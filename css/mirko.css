@@ -1,0 +1,38 @@
+.section-mirko{
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 8px solid var(--gray);
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5%;
+}
+
+.section-mirko .img{
+    width: 30%;
+}
+
+.section-mirko .img img{
+    width: 100%;
+    position: relative;
+    right: 20%;
+}
+
+.section-mirko .article-mirko{
+    width: 27%;
+    position: relative;
+    left: 10%;
+}
+
+.section-mirko .article-mirko h2{
+    font-size: 3rem;
+    padding-bottom: 3.5%;
+}
+
+.section-mirko .article-mirko p{
+    font-size: 1.6rem;
+}
+
+

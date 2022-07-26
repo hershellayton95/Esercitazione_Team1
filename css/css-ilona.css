@@ -1,11 +1,11 @@
-:root{
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
 /* il container più grande è header*/
 .header{
     display: flex;
-    /* border:  2px solid aquamarine; */
+    border:  2px solid aquamarine;
     flex-direction: column;
     background-image: url(/assets/backgreound-header.jpg);
     background-repeat: no-repeat;
@@ -13,6 +13,8 @@
     background-color: rgba(0, 0, 0, 0.4);
     background: linear-gradient(rgba(11, 11, 11, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/backgreound-header.jpg");
     overflow: hidden;
+    border-bottom: 8px solid var(--gray);
+    padding-bottom: 3rem;
 }
 
 
@@ -21,7 +23,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 60%;
     /* border: 2px solid rgb(223, 226, 43); */
 }
 
@@ -58,31 +63,64 @@
 }
 
 /* select è un figlio di nav container*/
-.language-options{
-    margin-top: 20px; 
+.select-options{
+    /* margin-top: 20px;  */
     /* line-height: 1.3em; */
-    background: rgba(0,0,0);
+    /* background: rgba(0,0,0); */
+    background: transparent;
     color: #fff;
     font-size: 0.875rem;
     /* padding-left: 1.375rem; */
-    padding: 40px;
-     border: none;
+
+    border: none;
     appearance: unset;
-   
+
+    font-size: 0.9rem;
+    font-weight: 400;
+    /* padding: 7px 17px; */
+    /* padding: 7px 0; */
+    line-height: normal;
+    z-index: 2;
+    padding: 40px;
+    position: absolute;
+
+}
+
+
+
+.language-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: black;
+    border: 0.5px solid #fff;
+    border-radius: 3px;
+    padding: 8px 10px;
+    z-index: 1;
+    overflow: hidden;
+    position: relative; 
+    
+}
+
+/* globe icon from font awesome*/
+i {
+    color: #fff;
 }
 
 
 
 .language-change {
    display: flex;
-   align-items: baseline;
+   align-items: center;
    gap: 25px;
 }
 
 
+
+
 /* a è un figlio di nav container*/
 a.button-sign-in {
-    margin-top: 20px;
     align-self: flex-start;  /* linea verticale */
     color:#fff;
     /* border: 2px solid salmon; */
@@ -96,11 +134,11 @@ a.button-sign-in {
     font-size: 1rem;
     font-weight: 400;
     padding: 7px 17px;
-    
     color: #fff;
     border-radius: 3px;
     line-height: normal;
 }
+
 
 .text-form h2 {
     font-size: 1.625rem;
@@ -166,9 +204,9 @@ a.button-sign-in {
     color: #8c8c8c;
     font-size: 16px;
     /* padding-left: 10px; */
-    
-
 }
+
+
 
 /* Per media q: flex direction column per .form-body */
 /* tablet */
@@ -190,11 +228,6 @@ a.button-sign-in {
     height: 60px;
     align-content: center;
 }
-
-   h2 {
-    
-    color: #e50914;
-   }
 
   
 } 

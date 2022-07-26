@@ -6,6 +6,7 @@
 .elga {
     background-color: #000;
     font-family: sans-serif;
+    border-bottom: 8px solid var(--gray);
 }
 /*distanza tra titolo, parte sup e parte inf*/
 div.faq {
@@ -38,6 +39,7 @@ div.question .header {
     font-size: 1.2rem;
     color: white;
     display: block;
+    background: #303030;
 }
 
 div.question div.content {
@@ -45,8 +47,29 @@ div.question div.content {
     font-size: 1rem;
     color: white;
     max-height: 0;
+    transition: 0.2s;
     overflow: hidden;
-    
+    margin-bottom: 0.2rem;
+}
+
+div.question svg {
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+div.question input[type="checkbox"]:checked ~ .header svg {
+    transform: rotate(0deg);
+    transition: 0.4s;
+}
+div.question input[type="checkbox"] ~ .header svg {
+    transform: rotate(45deg);
+    transition: 0.4s;
 }
 
 div.question input[type="checkbox"]:checked ~ div.content {
@@ -84,17 +107,15 @@ div.netflix form {
     
     display: grid;
     grid-template-columns: 1fr max-content;
-    margin-left: 150px;
+    margin-left: 70px;
     
 }
 
-div.netflix input {
-    
+div.netflix input {    
     padding: 1rem;
     position: relative;
     height: 1.8rem;
-    font-size: 1.3rem;
-    
+    font-size: 1.3rem;   
 }
 
 div.netflix button {
@@ -109,6 +130,5 @@ div.netflix button {
     cursor: pointer;
     justify-content: center;
 }
-
 
 

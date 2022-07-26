@@ -28,16 +28,26 @@
     
 }
 .img2-misida{
-   z-index: 1;
+    display: flex;
+    z-index: 1;
+    border: 2px solid grey;
+    border-radius: 10px;
    
 }
 .img2-misida img{
     width: 40%;
 }
+.txt-img2-misida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 
 .text-misida{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
 }
 .text-misida p

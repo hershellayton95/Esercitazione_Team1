@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .section-mirko{
     background-color: var(--black);
     color: var(--white);
@@ -20,6 +24,15 @@
     z-index: 2;
     height: auto;
 }
+
+.animation-mirko,.video-mirko{
+    width: 56%;
+    height: 48%;
+    position: absolute;
+    bottom: 34%;
+    right: 10.7%;
+}
+
 
 .section-mirko .article-mirko{
     width: 28%;
@@ -48,7 +61,7 @@
         color: var(--white);
         border-bottom: 8px solid var(--gray);
         padding-bottom: 5%;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 5%;
@@ -56,29 +69,42 @@
     }
     
     .section-mirko .img{
-        width: 45%;
+        width: 100%;
     }
     
     .section-mirko .img img{
-        max-width: 100%;
+        max-width: 80%;
         position: relative; 
         height: auto;
-        left: 10%;
+        left: 16.9%;
+        padding-bottom: 2.5%;
+    }
+
+    .animation-mirko,.video-mirko{
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        bottom: 15.2%;
+        right: 14.9%;
     }
     
     .section-mirko .article-mirko{
-        width: 34%;
+        width: 87%;
+        text-align: center;
         position: relative;
-        left: 2%;
+        left: 0%;
     }
     
     .section-mirko .article-mirko h2{
-        font-size: 3.4rem;
-        padding-bottom: 2.5%;
+        font-size: 2.5rem;
+        padding-bottom: 2%;
     }
     
     .section-mirko .article-mirko p{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        position: absolute;
+        top: 100%;
+        z-index: 3;
     }
 }
 
@@ -88,16 +114,16 @@
         background-color: var(--black);
         color: var(--white);
         border-bottom: 8px solid var(--gray);
-        padding-bottom: 15%;
+        padding-bottom: 9%;
         flex-direction: column;
         justify-content: center;
-        padding-top: 5%;
+        padding-top: 6%;
         text-align: center;
         
     }
     
     .section-mirko .img{
-        width: 85%;
+        width: 90%;
     }
     
     .section-mirko .img img{
@@ -105,20 +131,30 @@
         position: relative; 
         height: auto;
         left: 0%;
+        padding-top: 2.5%;
     }
     
+
+    .animation-mirko,.video-mirko{
+        width: 81%;
+        height: 80%;
+        position: absolute;
+        top: 10%;
+        right: 9.5%;
+    }
+
     .section-mirko .article-mirko{
-        width: 80%;
+        width: 90%;
         position: relative;
         left: 0%;
     }
     
     .section-mirko .article-mirko h2{
-        font-size: 2.5rem;
+        font-size: 1.625rem;
         padding-bottom: 2.5%;
     }
     
     .section-mirko .article-mirko p{
-        font-size: 1.3rem;
+        font-size: 1.125rem;
 }
 }

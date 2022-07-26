@@ -1,0 +1,43 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-misida{
+    background-color: var(--black);
+    
+
+}
+.article-misida{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 1200px;
+
+}
+.immagini-misida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-misida{
+
+    
+}
+.img2-misida{
+   z-index: 1;
+   
+}
+.img2-misida img{
+    width: 40%;
+}
+
+.text-misida{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.text-misida p

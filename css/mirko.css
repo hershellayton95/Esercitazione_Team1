@@ -16,11 +16,11 @@
 }
 
 /*WIDTH IMMAGINE E TESTO*/
-.section-mirko .img{
+.section-mirko .img-container-mirko{
     width: 38%;
 }
 
-.section-mirko .img img{
+.section-mirko .img-container-mirko img{
     max-width: 75%;
     position: relative;
     z-index: 2;
@@ -45,7 +45,7 @@
     width: 56%;
     height: 48%;
     position: absolute;
-    bottom: 34%;
+    bottom: 8%;
     right: 10.7%;
 }
 
@@ -54,7 +54,7 @@
     height: 48%;
     position: absolute;
     left: 42%;
-    top: 105%;
+    top: 132%;
 
 }
 
@@ -93,11 +93,11 @@
         
     }
     
-    .section-mirko .img{
+    .section-mirko .img-container-mirko{
         width: 100%;
     }
     
-    .section-mirko .img img{
+    .section-mirko .img-container-mirko img{
         max-width: 80%;
         position: relative; 
         height: auto;
@@ -124,7 +124,7 @@
         width: 70%;
         height: 70%;
         position: absolute;
-        bottom: 15.2%;
+        top: 35.9%;
         right: 14.9%;
     }
     
@@ -133,7 +133,7 @@
         height: 55%;
         position: absolute;
         left: 16%;
-        top: 113%;
+        top: 136%;
     }
 
     .section-mirko .article-mirko{
@@ -170,11 +170,11 @@
         
     }
     
-    .section-mirko .img{
+    .section-mirko .img-container-mirko{
         width: 90%;
     }
     
-    .section-mirko .img img{
+    .section-mirko .img-container-mirko img{
         max-width: 100%;
         position: relative; 
         height: auto;
@@ -201,7 +201,7 @@
         width: 81%;
         height: 80%;
         position: absolute;
-        top: 10%;
+        top: 29.5%;
         right: 9.5%;
     }
 
@@ -209,8 +209,8 @@
         width: 75%;
         height: 75%;
         position: absolute;
-        left: 12%;
-        top: 86.5%;
+        left: 12.5%;
+        top: 106%;
     }
 
 

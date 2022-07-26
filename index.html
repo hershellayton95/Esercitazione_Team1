@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Italia - Guarda serie TV online, Guarda film online</title>
-	
-	<meta name="author" content="Team 1"/>
-	<meta name="description" content="Sito copia di Netflix usato come esercitazione dal Team 1 della Classe Full Stack 6."/>
-	
-	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> 
-	
-	<meta property="og:site_name" description="Netflix Italia - Guarda serie TV online, Guarda film online"/>
-	<meta property="og:article:author" description="Team 1"/>
-	<meta property="og:description" content="Sito copia di Netflix usato come esercitazione dal Team 1 della Classe Full Stack 6."/>
-	<meta property="og:image" content="favicon.ico">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mirko.css">
+    <meta name="author" content="Team 1" />
+    <meta
+      name="description"
+      content="Sito copia di Netflix usato come esercitazione dal Team 1 della Classe Full Stack 6."
+    />
 
-</head>
-<body>
-    <header> <!--header Ilona-->
-        <nav>
-            <img src="/assets/netflix-logo.png" 
-                 alt="Netlifx logo">
-           <select>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+    <meta
+      property="og:site_name"
+      description="Netflix Italia - Guarda serie TV online, Guarda film online"
+    />
+    <meta property="og:article:author" description="Team 1" />
+    <meta
+      property="og:description"
+      content="Sito copia di Netflix usato come esercitazione dal Team 1 della Classe Full Stack 6."
+    />
+    <meta property="og:image" content="favicon.ico" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/css-ilona.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-dario.css" />
+    <link rel="stylesheet" href="css/mirko.css" />
+    <link rel="stylesheet" href="./css/elga.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!--header Ilona-->
+      <nav class="navbar">
+        <div class="logo-img">
+          <img src="/assets/netflix-logo.png" alt="Netlifx logo" />
+        </div>
+
+        <div class="language-change">
+          <select class="language-options">
             <option>Italiano</option>
             <option>English</option>
-           </select>
-
-           <button type="submit" id="button">Accedi</button>
-
-        </nav>
-        
-
-        <div>
-            <h1>Film, serie TV e tanto altro. Senza limiti.</h1>
-            <h2>Guarda ciò che vuoi ovunque. Disdici quando vuoi.</h2>
-            <h3>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h3>
-            
-            <form>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Indirizzo Email">
-                </div>
-               
-            
-                <div>
-            
-                    <button type="submit" id="button">Inizia</button>
-                </div>
-            </form>
+          </select>
         </div>
+
+        <!-- <button type="button" id="button">Accedi</button> -->
+        <a
+          class="button-sign-in"
+          href="https://www.netflix.com/it/"
+          target="_blank"
+          >Accedi</a
+        >
+      </nav>
+      <section class="text-form">
+        <h1>Film, serie TV e tanto altro. Senza limiti.</h1>
+        <h2>Guarda ciò che vuoi ovunque. Disdici quando vuoi.</h2>
+
+        <form class="form-netlfix">
+          <section class="form-title">
+            <h3>
+              Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
+              riattivare il tuo abbonamento.
+            </h3>
+          </section>
+          <section class="form-body">
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Indirizzo Email"
+              class="input-netflix"
+            />
+            <a class="form-button" href="#">Inizia</a>
+          </section>
+        </form>
+      </section>
     </header>
     <main>
         <section class="section-mirko"> <!--Body part 1 Mirko-->
@@ -60,27 +86,33 @@
                 <h2>Goditi Netflix sulla tua TV.</h2>
                 <p>Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</p>
             </article>
-                <div class="img">
-                <img class="img-mirko" src="assets/tv.png" alt="immagine gif tv e telecomando">
+                <div class="img-container-mirko">
+                <img src="assets/tv.png" alt="immagine gif tv e telecomando">
                 <div class="animation-mirko">
                     <video class="video-mirko" autoplay="" muted="" loop="">
                         <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
                     </video>
                 </div>
+        </div>
+      </section>
+
+      <section>
+        <!--Body part 2 Misida-->
+        <article>
+          <div>
+            <div>
+              <img
+                src="assets/mobile-0819.jpg"
+                alt="immagine di Undici in stranger things"
+              />
             </div>
-        </section>
-        
-        <section> <!--Body part 2 Misida-->
-            <article>
-                <div>
-                <div>
-                    <img src="assets/mobile-0819.jpg" alt="immagine di Undici in stranger things">
-                </div>
-                <div>
-                    <img src="assets/boxshot_stranger things.png" alt="cover di stranger things">
-                    <p>Stranger Things</p>
-                    <p>Download in corso...</p>
-                </div>
+            <div>
+              <img
+                src="assets/boxshot_stranger things.png"
+                alt="cover di stranger things"
+              />
+              <p>Stranger Things</p>
+              <p>Download in corso...</p>
             </div>
                 <h2>Scarica le tue serie da guardare offline</h2>
                 <p>Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare</p>
@@ -101,119 +133,192 @@
                         </video>
                     </div>
                 </div>
-            
+        </article>
+      </section>
 
-        </section>
+      <section class="dario">
+        <!--body-part 4 Dario-->
 
+        <article class="article-dario">
+          <div class="div-dario-img">
+            <img
+              src="assets\bambini.png"
+              alt="Immagine con bambini e un coniglietto"
+              class="img-dario"
+            />
+          </div>
+          <div class="div-dario-text">
+            <h2>Crea profili per i bambini.</h2>
+            <p>
+              I bambini scoprono nuove avventure in compagnia dei loro
+              personaggi preferiti in uno spazio tutto loro già incluso nel tuo
+              abbonamento.
+            </p>
+          </div>
+        </article>
+      </section>
 
-        <section> <!--body-part 4 Dario-->
-            <article>
-                <img src="assets\bambini.png" alt="Immagine con bambini e un coniglietto">
-                <h2>Crea profili per i bambini.</h2>
-                <p>I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
-            </article>
-        </section>
+      <section class="elga">
+        <!--Parte 5 Elga-->
+        <div class="faq">
+          <h1>Domande Frequenti</h1>
+        </div>
+        <div class="questions">
+          <div class="question">
+            <input type="checkbox" />
+            <label class="header">Cos'è Netflix?</label>
+            <div class="content">
+              Netflix è un servizio di streaming che offre una varietà di serie
+              TV, film, documentari pluripremiati e tanto altro su una vasta
+              gamma di dispositivi connessi a Internet.
+              <br />
+              <br />
+              Guarda quello che vuoi, in qualsiasi momento e senza interruzioni
+              pubblicitarie. Il tutto a una quota mensile ridotta. C'è sempre
+              qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV
+              ogni settimana!
+            </div>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="question">
+            <input type="checkbox" />
+            <label class="header">Quanto costa Netflix?</label>
+            <div class="content">
+              Guarda Netflix su smartphone, tablet, Smart TV, laptop o
+              dispositivi per lo streaming, il tutto per un importo mensile
+              fisso. Piani da 7,99 € a 17,99 € al mese. Nessun costo aggiuntivo,
+              nessun contratto.
+            </div>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="question">
+            <input type="checkbox" />
+            <label class="header">Dove posso guardare Netflix?</label>
+            <div class="content">
+              Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per
+              guardare subito Netflix dal tuo computer su netflix.com oppure da
+              qualsiasi dispositivo connesso a Internet che supporta l'app
+              Netflix, come smart TV, smartphone, tablet, lettori multimediali
+              per streaming e console per videogiochi.
+              <br />
+              <br />
+              Con l'app per iOS, Android e Windows 10 puoi anche scaricare i
+              tuoi programmi preferiti. Usa la funzionalità di download per
+              guardare i contenuti mentre sei in viaggio e senza connessione a
+              Internet. Porta Netflix sempre con te.
+            </div>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="question">
+            <input type="checkbox" />
+            <label class="header">Come posso disdire?</label>
+            <div class="content">
+              Netflix è flessibile. Nessun contratto fastidioso e nessun
+              impegno. Puoi facilmente disdire il tuo contratto online con due
+              clic. Nessuna penale: attiva o disdici il tuo account in qualsiasi
+              momento.
+            </div>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="question">
+            <input type="checkbox" />
+            <label class="header">Cosa posso guardare su Netflix?</label>
+            <div class="content">
+              Netflix ha un nutrito catalogo di lungometraggi, documentari,
+              serie TV, anime, originali Netflix pluripremiati e tanto altro.
+              Guarda tutto quello che vuoi, in qualsiasi momento.
+            </div>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="question">
+            <input type="checkbox" />
+            <label class="header">Netflix è adatto ai bambini?</label>
+            <div class="content">
+              L'area Netflix Bambini, già inclusa nell'abbonamento, offre ai
+              genitori un maggiore controllo sui contenuti e ai più piccoli uno
+              spazio dedicato dove guardare serie TV e film per tutta la
+              famiglia.
+              <br />
+              <br />
+              I profili Bambini hanno un filtro famiglia con PIN che ti permette
+              di limitare l'accesso ai contenuti in base alla fascia d'età e
+              bloccare la visione di titoli specifici.
+            </div>
+          </div>
+        </div>
 
-        <section> <!--Parte 5 Elga-->
-            <article>
-                <h2>Domande frequenti</h2>
-                <div>
-                    <dl>
-                        <dt>Cos'è Netflix?</dt>
-                        <dd>Netflix è un servizio di streaming che offre una    varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet.<br><br>Guarda quello che vuoi, in qualsiasi momento e senza interruzioni pubblicitarie. Il tutto a una quota mensile ridotta.C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV ogni settimana!</dd>
-
-                        <dt>Quanto costa Netflix?</dt>
-                        <dd>Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi per lo streaming, il tutto per un importo mensile fisso. Piani da 7,99 € a 17,99 € al mese. Nessun costo aggiuntivo, nessun contratto.</dd>
-                        
-                        <dt>Dove posso guardare Netflix?</dt>
-                        <dd>Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per guardare subito Netflix dal tuo computer su netflix.com oppure da qualsiasi dispositivo connesso a Internet che supporta l'app Netflix, come smart TV, smartphone, tablet, lettori multimediali per streaming e console per videogiochi.<br><br>Con l'app per iOS, Android e Windows 10 puoi anche scaricare i tuoi programmi preferiti. Usa la funzionalità di download per guardare i contenuti mentre sei in viaggio e senza connessione a Internet. Porta Netflix sempre con te.</dd>
-
-                        <dt>Come posso disdire</dt>
-                        <dd>Netflix è flessibile. Nessun contratto fastidioso e nessun impegno. Puoi facilmente disdire il tuo contratto online con due clic. Nessuna penale: attiva o disdici il tuo account in qualsiasi momento.</dd>
-
-                        <dt>Come posso guardare su Netflix?</dt>
-                        <dd>Netflix ha un nutrito catalogo di lungometraggi, documentari, serie TV, anime, originali Netflix pluripremiati e tanto altro. Guarda tutto quello che vuoi, in qualsiasi momento.</dd>
-                        
-                        <dt>Nerflix è adatto ai bambini?</dt>
-                        <dd>L'area Netflix Bambini, già inclusa nell'abbonamento, offre ai genitori un maggiore controllo sui contenuti e ai più piccoli uno spazio dedicato dove guardare serie TV e film per tutta la famiglia.<br><br>I profili Bambini hanno un filtro famiglia con PIN che ti permette di limitare l'accesso ai contenuti in base alla fascia d'età e bloccare la visione di titoli specifici.</dd>
-                    </dl>
-                </div>
-
-                <div>
-                    <h4>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h4>
-                </div>
-
-                <div>
-                    <form>
-                        <div>
-                            <label for="email">
-                                <input type="email" id="email" name="email" placeholder="Indirizzo email">
-                                
-                            </label>
-                        </div>
-                        <div>
-                            <button type="submit">Inizia</button>
-                        </div>
-                    </form>
-                </div>
-            </article>
-        </section>
+        <div class="netflix">
+          <h4>
+            Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
+            riattivare il tuo abbonamento.
+          </h4>
+          <br />
+          <div class="button-email">
+            <form>
+              <input type="email" />
+              <button>Inizia &gt;</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer> <!--Footer Ilona-->
+    <footer>
+      <!--Footer Ilona-->
 
-        <p>Domande? Chiama <a href="tel:800-130-366">800-130-364</a></p>
-    
-        <div>
-            <ul>
-                <li><a href="#">Domande frequenti</a></li>
-                <li><a href="#">Rapporti con gli investitori</a></li>
-                <li><a href="#">Come guardare Netflix</a></li>
-                <li><a href="#">Informazioni sull'azienda</a></li>
-                <li><a href="#">Note legali</a></li>
-            </ul>
-        </div>
+      <p>Domande? Chiama <a href="tel:800-130-366">800-130-364</a></p>
 
-        <div>
-            <ul>
-                <li><a href="#">Centro assistenza</a></li>
-                <li><a href="#">Opportunità di lavoro</a></li>
-                <li><a href="#">Condizioni di utilizzo</a></li>
-                <li><a href="#">Contattaci</a></li>
-                <li><a href="#">Solo su Netflix</a></li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li><a href="#">Domande frequenti</a></li>
+          <li><a href="#">Rapporti con gli investitori</a></li>
+          <li><a href="#">Come guardare Netflix</a></li>
+          <li><a href="#">Informazioni sull'azienda</a></li>
+          <li><a href="#">Note legali</a></li>
+        </ul>
+      </div>
 
-        <div>
-            <ul>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Riscatta carte regalo</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Test di velocità</a></li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li><a href="#">Centro assistenza</a></li>
+          <li><a href="#">Opportunità di lavoro</a></li>
+          <li><a href="#">Condizioni di utilizzo</a></li>
+          <li><a href="#">Contattaci</a></li>
+          <li><a href="#">Solo su Netflix</a></li>
+        </ul>
+      </div>
 
-        <div>
-            <ul>
-                <li><a href="#">Media Center</a></li>
-                <li><a href="#">Acquista carte regalo</a></li>
-                <li><a href="#">Preferenze per i cookie</a></li>
-                <li><a href="#">Garanzia legale</a></li>
-            </ul> 
-        </div>
+      <div>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Riscatta carte regalo</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Test di velocità</a></li>
+        </ul>
+      </div>
 
-        <div>
-            <select>
-                <option>Italiano</option>
-                <option>English</option>
-    
-            </select>
-        </div>
+      <div>
+        <ul>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Acquista carte regalo</a></li>
+          <li><a href="#">Preferenze per i cookie</a></li>
+          <li><a href="#">Garanzia legale</a></li>
+        </ul>
+      </div>
 
-        <p>Neflix Italia</p>
+      <div>
+        <select>
+          <option>Italiano</option>
+          <option>English</option>
+        </select>
+      </div>
 
+      <p>Neflix Italia</p>
     </footer>
-    
-</body>
+  </body>
 </html>
-

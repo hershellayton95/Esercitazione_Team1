@@ -12,8 +12,6 @@
       content="Sito copia di Netflix usato come esercitazione dal Team 1 della Classe Full Stack 6."
     />
 
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-
     <meta
       property="og:site_name"
       description="Netflix Italia - Guarda serie TV online, Guarda film online"
@@ -31,6 +29,16 @@
     <link rel="stylesheet" href="./css/style-dario.css" />
     <link rel="stylesheet" href="css/mirko.css" />
     <link rel="stylesheet" href="./css/elga.css" />
+    <!--Font awesome Ilona-->
+    <script
+      src="https://kit.fontawesome.com/6154d6127d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+    />
   </head>
   <body>
     <header class="header">
@@ -41,19 +49,23 @@
         </div>
 
         <div class="language-change">
-          <select class="language-options">
-            <option>Italiano</option>
-            <option>English</option>
-          </select>
-        </div>
+          <div class="language-select">
+            <i class="fa fa-solid fa-globe"></i>
+            <select class="select-options">
+              <option>Italiano</option>
+              <option>English</option>
+            </select>
+            <i class="fa fa-solid fa-sort-down"></i>
+          </div>
 
-        <!-- <button type="button" id="button">Accedi</button> -->
-        <a
-          class="button-sign-in"
-          href="https://www.netflix.com/it/"
-          target="_blank"
-          >Accedi</a
-        >
+          <!-- <button type="button" id="button">Accedi</button> -->
+          <a
+            class="button-sign-in"
+            href="https://www.netflix.com/it/"
+            target="_blank"
+            >Accedi</a
+          >
+        </div>
       </nav>
       <section class="text-form">
         <h1>Film, serie TV e tanto altro. Senza limiti.</h1>
@@ -75,27 +87,24 @@
               placeholder="Indirizzo Email"
               class="input-netflix"
             />
-            <a class="form-button" href="#">Inizia</a>
+            <a class="form-button" href="#">Inizia &gt;</a>
           </section>
         </form>
       </section>
     </header>
     <main>
-      <section class="section-mirko">
-        <!--Body part 1 Mirko-->
-        <article class="article-mirko">
-          <h2>Goditi Netflix sulla tua TV.</h2>
-          <p>
-            Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV,
-            lettori Blu-ray e molti altri dispositivi.
-          </p>
-        </article>
-        <div class="img">
-          <img
-            class="img-mirko"
-            src="assets/tv.png"
-            alt="immagine gif tv e telecomando"
-          />
+        <section class="section-mirko"> <!--Body part 1 Mirko-->
+            <article class="article-mirko">
+                <h2>Goditi Netflix sulla tua TV.</h2>
+                <p>Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</p>
+            </article>
+                <div class="img-container-mirko">
+                <img src="assets/tv.png" alt="immagine gif tv e telecomando">
+                <div class="animation-mirko">
+                    <video class="video-mirko" autoplay="" muted="" loop="">
+                        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                    </video>
+                </div>
         </div>
       </section>
 
@@ -117,25 +126,25 @@
               <p>Stranger Things</p>
               <p>Download in corso...</p>
             </div>
-          </div>
-          <h2>Scarica le tue serie da guardare offline</h2>
-          <p>
-            Salva facilmente i tuoi preferiti così avrai sempre qualcosa da
-            guardare
-          </p>
-        </article>
-      </section>
-      <section>
-        <!--Body part 3 Misida-->
-        <article>
-          <h2>Guarda Netflix ovunque</h2>
-          <p>
-            Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in
-            streaming film e serie TV senza limiti e senza spendere di più.
-          </p>
-          <div>
-            <img src="assets/device-pile.png" alt="immagine di serie tv" />
-          </div>
+                <h2>Scarica le tue serie da guardare offline</h2>
+                <p>Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare</p>
+                
+            </article>
+        </section>
+
+        <section class="section-mirko"> <!--Body part 3 Mirko-->
+            <article class="article-mirko">
+                <h2>Guarda Netflix ovunque.</h2>
+                <p>Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti e senza spendere di più.</p>
+            </article>
+                <div class="img-dustin-mirko">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="immagine di serie tv">
+                    <div class="animation-dustin-mirko">
+                        <video class="video-dustin-mirko" autoplay="" muted="" loop="">
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
         </article>
       </section>
 

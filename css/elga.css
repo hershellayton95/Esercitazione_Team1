@@ -6,6 +6,7 @@
 .elga {
     background-color: #000;
     font-family: sans-serif;
+    border-bottom: 8px solid var(--gray);
 }
 /*distanza tra titolo, parte sup e parte inf*/
 div.faq {
@@ -38,6 +39,7 @@ div.question .header {
     font-size: 1.2rem;
     color: white;
     display: block;
+    background: #303030;
 }
 
 div.question div.content {
@@ -45,8 +47,29 @@ div.question div.content {
     font-size: 1rem;
     color: white;
     max-height: 0;
+    transition: 0.2s;
     overflow: hidden;
-    
+    margin-bottom: 0.2rem;
+}
+
+div.question svg {
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+div.question input[type="checkbox"]:checked ~ .header svg {
+    transform: rotate(0deg);
+    transition: 0.4s;
+}
+div.question input[type="checkbox"] ~ .header svg {
+    transform: rotate(45deg);
+    transition: 0.4s;
 }
 
 div.question input[type="checkbox"]:checked ~ div.content {
@@ -67,48 +90,41 @@ div.question input[type="checkbox"] {
 div.netflix {
     padding: 2rem;
     color: white;
-    text-align: center;
-    
+    text-align: center;   
 }
 
-div.button-email {
-    position: inherit;
-    max-width: 655px;
-    align-items: center;
-    text-align: center;
-    inset: 0;
-    margin-left: 28%;
+.form-body {
+    padding: 20px 10px;
+    align-content: center;
 }
 
-div.netflix form {
-    
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    margin-left: 150px;
-    
+.input-netflix {
+    min-width: 450px;
+    height: 60px;
+    align-content: center;
 }
 
-div.netflix input {
-    
-    padding: 1rem;
-    position: relative;
-    height: 1.8rem;
-    font-size: 1.3rem;
-    
+.form-button {
+    background-color: #e50914;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0;
+    line-height: normal;
+    text-decoration: none;
+    padding: 1.14rem 3rem;
+    margin: 0;
 }
 
-div.netflix button {
-    
-    position: relative;
-    padding: 0.6rem 3rem;
-    background-color: red;
-    border: none;
-    margin-left: 0.1rem;
-    font-size: 1.3rem;
-    color: white;
-    cursor: pointer;
+.form-button:hover {
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+
+@media screen and (max-width: 550px) {
+    div.questions {
+    flex-direction: column-reverse;
+    align-items: stretch;
     justify-content: center;
 }
 
-
-
+}

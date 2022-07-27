@@ -3,6 +3,7 @@
     --red: #E10712;
     --white: #FFFFFF;
     --gray: #222222;
+    --faqgray: #303030;
 }
 
 * {
@@ -10,4 +11,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-

@@ -94,41 +94,38 @@ div.netflix {
     
 }
 
-div.button-email {
-    position: inherit;
-    max-width: 655px;
-    align-items: center;
-    text-align: center;
-    inset: 0;
-    margin-left: 28%;
+.form-body {
+    padding: 20px 10px;
+    align-content: center;
 }
 
-div.netflix form {
-    
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    margin-left: 70px;
-    
+.input-netflix {
+    min-width: 450px;
+    height: 60px;
+    align-content: center;
 }
 
-div.netflix input {    
-    padding: 1rem;
-    position: relative;
-    height: 1.8rem;
-    font-size: 1.3rem;   
+.form-button {
+    background-color: #e50914;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0;
+    line-height: normal;
+    text-decoration: none;
+    padding: 1.14rem 3rem;
+    margin: 0;
 }
 
-div.netflix button {
-    
-    position: relative;
-    padding: 0.6rem 3rem;
-    background-color: red;
-    border: none;
-    margin-left: 0.1rem;
-    font-size: 1.3rem;
-    color: white;
-    cursor: pointer;
+.form-button:hover {
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+
+@media screen and (max-width: 550px;) {
+    div.questions {
+    flex-direction: column-reverse;
+    align-items: stretch;
     justify-content: center;
 }
 
-
+}

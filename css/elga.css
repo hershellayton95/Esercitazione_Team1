@@ -120,7 +120,7 @@ div.netflix {
     box-shadow: 0 1px 0 rgba(0,0,0,.45);
 }
 
-@media screen and (max-width: 550px;) {
+@media screen and (max-width: 550px) {
     div.questions {
     flex-direction: column-reverse;
     align-items: stretch;

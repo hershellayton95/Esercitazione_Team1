@@ -1,0 +1,231 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*CONTAINER*/
+.section-mirko{
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 8px solid var(--gray);
+    padding-bottom: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1%;
+}
+
+/*WIDTH IMMAGINE E TESTO*/
+.section-mirko .img-container-mirko{
+    width: 38%;
+}
+
+.section-mirko .img-container-mirko img{
+    max-width: 75%;
+    position: relative;
+    z-index: 2;
+    height: auto;
+}
+
+
+.section-mirko .img-dustin-mirko{
+    width: 35%;
+    padding-top: 1%;
+}
+
+.section-mirko .img-dustin-mirko img{
+    max-width: 90%;
+    position: relative;
+    z-index: 1;
+    height: auto;
+}
+
+/*GIFS*/
+.animation-mirko,.video-mirko{
+    width: 56%;
+    height: 48%;
+    position: absolute;
+    bottom: 8%;
+    right: 10.7%;
+}
+
+.animation-dustin-mirko, .video-dustin-mirko{
+    width: 45%;
+    height: 48%;
+    position: absolute;
+    left: 42%;
+    top: 132%;
+
+}
+
+/*TESTI*/
+.section-mirko .article-mirko{
+    width: 28%;
+    position: relative;
+    left: 14%;
+    padding-top: 2%;
+}
+
+.section-mirko .article-mirko h2{
+    font-size: 3.125rem;
+    padding-bottom: 3.5%;
+    
+}
+
+.section-mirko .article-mirko p{
+    font-size: 1.625rem;
+}
+
+
+
+
+/*TABLET*/
+@media screen and (max-width: 950px){
+    .section-mirko{
+        background-color: var(--black);
+        color: var(--white);
+        border-bottom: 8px solid var(--gray);
+        padding-bottom: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        
+    }
+    
+    .section-mirko .img-container-mirko{
+        width: 100%;
+    }
+    
+    .section-mirko .img-container-mirko img{
+        max-width: 80%;
+        position: relative; 
+        height: auto;
+        left: 16.9%;
+        padding-bottom: 2.5%;
+    }
+
+
+    .section-mirko .img-dustin-mirko{
+        width: 80%;
+        padding-top: 5%;
+    }
+
+    .section-mirko .img-dustin-mirko img{
+        max-width: 80%;
+        position: relative;
+        left: 7%;
+        z-index: 1;
+        height: auto;
+        padding-bottom: 3%;
+    }
+
+    .animation-mirko,.video-mirko{
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        top: 35.9%;
+        right: 14.9%;
+    }
+    
+    .animation-dustin-mirko, .video-dustin-mirko{
+        width: 64%;
+        height: 55%;
+        position: absolute;
+        left: 16%;
+        top: 136%;
+    }
+
+    .section-mirko .article-mirko{
+        width: 87%;
+        text-align: center;
+        position: relative;
+        left: 0%;
+    }
+    
+    .section-mirko .article-mirko h2{
+        font-size: 2.5rem;
+        padding-bottom: 2%;
+    }
+    
+    .section-mirko .article-mirko p{
+        font-size: 1.25rem;
+        position: absolute;
+        top: 100%;
+        z-index: 3;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 550px) {
+    .section-mirko{
+        background-color: var(--black);
+        color: var(--white);
+        border-bottom: 8px solid var(--gray);
+        padding-bottom: 9%;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 6%;
+        text-align: center;
+        
+    }
+    
+    .section-mirko .img-container-mirko{
+        width: 90%;
+    }
+    
+    .section-mirko .img-container-mirko img{
+        max-width: 100%;
+        position: relative; 
+        height: auto;
+        left: 0%;
+        padding-top: 2.5%;
+    }
+    
+    .section-mirko .img-dustin-mirko{
+        width: 100%;
+        padding-top: 12%;
+    }
+
+    .section-mirko .img-dustin-mirko img{
+        max-width: 90%;
+        position: relative;
+        left: 0%;
+        z-index: 1;
+        height: auto;
+        padding-bottom: 2.5%;
+    }
+
+
+    .animation-mirko,.video-mirko{
+        width: 81%;
+        height: 80%;
+        position: absolute;
+        top: 29.5%;
+        right: 9.5%;
+    }
+
+    .animation-dustin-mirko, .video-dustin-mirko{
+        width: 75%;
+        height: 75%;
+        position: absolute;
+        left: 12.5%;
+        top: 106%;
+    }
+
+
+    .section-mirko .article-mirko{
+        width: 90%;
+        position: relative;
+        left: 0%;
+    }
+    
+    .section-mirko .article-mirko h2{
+        font-size: 1.625rem;
+        padding-bottom: 2.5%;
+    }
+    
+    .section-mirko .article-mirko p{
+        font-size: 1.125rem;
+}
+}

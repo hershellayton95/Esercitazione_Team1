@@ -93,29 +93,6 @@ div.netflix {
     text-align: center;   
 }
 
-.form-body {
-    padding: 20px 10px;
-    align-content: center;
-}
-
-.input-netflix {
-    min-width: 450px;
-    height: 60px;
-    align-content: center;
-}
-
-.form-button {
-    background-color: #e50914;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-    border-radius: 0;
-    line-height: normal;
-    text-decoration: none;
-    padding: 1.14rem 3rem;
-    margin: 0;
-}
-
 .form-button:hover {
     box-shadow: 0 1px 0 rgba(0,0,0,.45);
 }

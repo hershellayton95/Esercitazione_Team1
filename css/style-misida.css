@@ -81,7 +81,7 @@ width: 100%;
 
 
 /*TABLET*/
-@media screen and (min-width: 551px) and (max-width: 950px){
+@media screen and (max-width: 950px){
     .section2-container{
 
         display: block;
